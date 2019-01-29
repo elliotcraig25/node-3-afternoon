@@ -1,5 +1,5 @@
 module.exports = function(req, res, next){
-    const {session} = req.body;
+    const {session} = req;
 
     if(!session.user){
         session.user = {
